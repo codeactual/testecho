@@ -11,6 +11,8 @@ notifications:
   email: false
 
 script:
+  # For 1.12 build
+  - export GO111MODULE=on
   # Assert compilation
   - make build
   # Assert test suite
@@ -18,7 +20,7 @@ script:
   # Assert "go get" accessible
   - mkdir $HOME/go_get_test
   - cd $HOME/go_get_test
-  - GO111MODULE=on go mod init go_get_test
+  - go mod init go_get_test
   - 'go get -v github.com/codeactual/testecho/cmd/testecho@${TRAVIS_COMMIT}'
   - testecho --help
   # Attempt to invalidate Github's cached badge images
