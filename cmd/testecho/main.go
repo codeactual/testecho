@@ -71,7 +71,9 @@ import (
 )
 
 func main() {
-	err := handler_cobra.NewHandler(&Handler{}).Execute()
+	err := handler_cobra.NewHandler(&Handler{
+		Session: &handler.DefaultSession{},
+	}).Execute()
 	if err != nil {
 		panic(errors.WithStack(err))
 	}
@@ -83,7 +85,7 @@ const (
 
 // Handler defines the sub-command flags and logic.
 type Handler struct {
-	handler.IO
+	handler.Session
 
 	Code   int `usage:"Exit with this code"`
 	Sleep  int `usage:"Sleep for this number of seconds before exiting (but after printing any selected messages"`
@@ -120,8 +122,8 @@ func (h *Handler) BindFlags(cmd *cobra.Command) []string {
 // Run performs the sub-command logic.
 //
 // It implements cli/handler/cobra.Handler.
-func (h *Handler) Run(ctx context.Context, args []string) {
-	if len(args) > 0 {
+func (h *Handler) Run(ctx context.Context, input handler.Input) {
+	if len(input.Args) > 0 {
 		fmt.Fprintln(h.Err(), "Received unexpected arguments, see --help")
 		os.Exit(1)
 	}

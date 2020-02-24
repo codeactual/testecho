@@ -1,8 +1,8 @@
-# testecho [![GoDoc](https://godoc.org/github.com/codeactual/testecho?status.svg)](https://godoc.org/github.com/codeactual/testecho) [![Go Report Card](https://goreportcard.com/badge/github.com/codeactual/testecho)](https://goreportcard.com/report/github.com/codeactual/testecho) [![Build Status](https://travis-ci.org/codeactual/testecho.png)](https://travis-ci.org/codeactual/testecho)
+# testecho [![GoDoc](https://godoc.org/github.com/codeactual/testecho?status.svg)](https://pkg.go.dev/mod/github.com/codeactual/testecho) [![Go Report Card](https://goreportcard.com/badge/github.com/codeactual/testecho)](https://goreportcard.com/report/github.com/codeactual/testecho) [![Build Status](https://travis-ci.org/codeactual/testecho.png)](https://travis-ci.org/codeactual/testecho)
 
 testecho is a program to assist test cases which assert the subject starts and ends processes as expected. Its flags allow selection of stdout, stderr, exit code, etc.
 
-The [testecho package](https://godoc.org/github.com/codeactual/testecho) provides functions to more easily run the CLI from test cases.
+The [testecho package](https://pkg.go.dev/mod/github.com/codeactual/testecho) provides functions to more easily run the CLI from test cases.
 
 # Usage
 
@@ -80,8 +80,13 @@ echo "out" | testecho --stderr err --code 7 --sleep 5
 
 - [codeactual/boone](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/codeactual/boone%24+testecho%7Cechopath)
 
-# License
+# Development
+
+## License
 
 [Mozilla Public License Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/) ([About](https://www.mozilla.org/en-US/MPL/), [FAQ](https://www.mozilla.org/en-US/MPL/2.0/FAQ/))
 
-*(Exported from a private monorepo with [transplant](https://github.com/codeactual/transplant).)*
+## Contributing
+
+- Please feel free to submit issues, PRs, questions, and feedback.
+- Although this repository consists of snapshots extracted from a private monorepo using [transplant](https://github.com/codeactual/transplant), PRs are welcome. Standard GitHub workflows are still used.

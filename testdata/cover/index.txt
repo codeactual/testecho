@@ -5,11 +5,11 @@ github.com/codeactual/testecho/internal/cage/strings/replace_set.go	sortedSlice	
 github.com/codeactual/testecho/internal/cage/strings/set.go		Add			0.0%
 github.com/codeactual/testecho/internal/cage/strings/set.go		AddSet			0.0%
 github.com/codeactual/testecho/internal/cage/strings/set.go		AddSlice		0.0%
-github.com/codeactual/testecho/internal/cage/strings/set.go		Clear			0.0%
+github.com/codeactual/testecho/internal/cage/strings/set.go	Clear			0.0%
 github.com/codeactual/testecho/internal/cage/strings/set.go		Contains		0.0%
-github.com/codeactual/testecho/internal/cage/strings/set.go		Copy			0.0%
+github.com/codeactual/testecho/internal/cage/strings/set.go	Copy			0.0%
 github.com/codeactual/testecho/internal/cage/strings/set.go	Diff			0.0%
-github.com/codeactual/testecho/internal/cage/strings/set.go		Equals			0.0%
+github.com/codeactual/testecho/internal/cage/strings/set.go	Equals			0.0%
 github.com/codeactual/testecho/internal/cage/strings/set.go		Len			0.0%
 github.com/codeactual/testecho/internal/cage/strings/set.go		NewSet			0.0%
 github.com/codeactual/testecho/internal/cage/strings/set.go		Remove			0.0%
@@ -23,4 +23,4 @@ github.com/codeactual/testecho/internal/cage/strings/strings.go	StringKeyPtr		10
 github.com/codeactual/testecho/internal/cage/strings/strings.go	truncate		100.0%
 github.com/codeactual/testecho/internal/cage/strings/strings.go	TruncateAppendHint	100.0%
 github.com/codeactual/testecho/internal/cage/strings/strings.go	TruncatePrependHint	100.0%
-48.9%
+38.7%
